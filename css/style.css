@@ -1,0 +1,148 @@
+:root{
+  --colorBrand: #044e7d;
+}
+main{
+  background-color: #fff;
+}
+nav{
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--colorBrand);
+  display: grid;
+  align-content: center;
+}
+nav > .left-nav{
+  
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+nav > .left-nav > .left-nav-item{
+  padding: 0;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+nav > .left-nav > .left-nav-item:hover{
+  background-color: #2999b1;
+}
+
+nav > .left-nav > .left-nav-item:last-of-type i{
+  transform: rotateY(180deg);
+}
+nav > .left-nav > .left-nav-item span{
+  display: block;
+  font-size: 10px;
+}
+nav > .left-nav > .left-nav-item > a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carousel > a{
+  z-index: 3;
+}
+
+.carousel > .img-container > img{
+  width: 100px;
+}
+.carousel > .img-container{
+  z-index: 4;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.carousel > .overlay-carousel{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: minmax(300px, 768px);
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel > .overlay-carousel > h1{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+.carousel > .overlay-carousel > .container-buttons{
+  justify-content: center;
+  width: 320px;
+}
+.carousel > .overlay-carousel > .container-buttons > a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+  border: 3px solid #2999b1;
+  /* border-radius: 10px; */
+}
+
+
+.carousel > .carousel-inner > .carousel-item{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 375px){
+  .carousel > .img-container > img{
+    width: 150px;
+  }
+  .carousel > .overlay-carousel > h1{
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px){
+  body{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+  }
+  nav{
+    position: unset;
+    width: 74px;
+    height: 100%;
+    right: unset;
+  }
+  nav > .left-nav{
+    grid-template-columns: 1fr;
+  }
+  nav > .left-nav {
+    position: fixed;
+    top: calc(50% - 240px);
+  }
+  nav > .left-nav > .left-nav-item{
+    padding: 15px 3px;
+  }
+  nav > .left-nav > .left-nav-item i{
+    padding: 10.5px 0;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  nav > .left-nav > .left-nav-item span{
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
