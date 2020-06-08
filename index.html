@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,15 +23,16 @@
     <nav>
       <ul class="left-nav">
         <li class="left-nav-item">
-          <i class="fas fa-circle"></i>
-          <span>Logo</span>
-          <a href="#?">
+          <!-- <i class="fas fa-circle"></i> -->
+          <img src="img/logo.png" alt="">
+          <!-- <span>Logo</span> -->
+          <a href="#cover">
           </a>
         </li>
         <li class="left-nav-item">
           <i class="fas fa-user"></i>
           <span>Nosotros</span>
-          <a href="#?">
+          <a href="#nosotros">
           </a>
         </li>
         <li class="left-nav-item">
@@ -41,7 +42,8 @@
           </a>
         </li>
         <li class="left-nav-item">
-          <i class="fas fa-envelope-open-text"></i>
+          <!-- <i class="fas fa-envelope-open-text"></i> -->
+          <i class="fas fa-cog"></i>
           <span>Portfolio</span>
           <a href="#?">
           </a>
@@ -58,11 +60,11 @@
   </header>
 
   <main>
-    <section>
+    <section id="cover">
       <!--Carousel Wrapper-->
       <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="img-container">
-          <img width="150" src="img/Helix blanco.png" alt="">
+          <img width="250" src="img/logika2.png" alt="">
         </div>
         <!--Indicators-->
         <ol class="carousel-indicators d-none d-md-flex">
@@ -74,15 +76,15 @@
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
           <!--First slide-->
-          <div class="carousel-item active" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg');">
-          </div>
+          <div class="carousel-item active">
+          </div> 
           <!--/First slide-->
           <!--Second slide-->
-          <div class="carousel-item" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg');">
+          <div class="carousel-item" >
           </div>
           <!--/Second slide-->
           <!--Third slide-->
-          <div class="carousel-item" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg');">
+          <div class="carousel-item">
           </div>
           <!--/Third slide-->
         </div>
@@ -107,27 +109,38 @@
       </div>
       <!--/.Carousel Wrapper-->
     </section>
-    <section>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
+    <section id="nosotros" class="py-5 px-2 px-lg-4">
+      <div class="nosotros-main">
+        <h2 class="text-center mb-3 mb-md-5 font-weight-bold">Nosotros</h2>
+        <p>Somos una empresa con una gran trayectoria enfocada en brindar servicios de automatización a mediada para tu organización.</p>
+        <p>Nuestro equipo está conformado por personal técnico calificado y preparado para realizar obras de diversas infraestructuras.</p>
+      </div>
+
+      <div class="nosotros-values">
+        <div class="mision">
+          <div class="values-title">
+            <h3>Misión</h3>
+          </div>
+          <p>Proveer un servicio esencial para los clientes al agilizar y adaptar sus procesos de la mano de la nueva tecnología ayudándolos a lograr sus objetivos.</p>
+        </div>
+        <div class="vision">
+          <div class="values-title">
+            <h3>Visión</h3>
+          </div>
+          <p>Ser líderes en aplicación de procesos de automatización con el fin de mejorar la calidad de vida de las personas y las operaciones de las industrias.</p>
+        </div>
+        <div class="valores">
+          <div class="values-title">
+            <h3>Valores</h3>
+          </div>
+          <ul>
+            <li>Excelencia</li>
+            <li>Responsabilidad</li>
+            <li>Seguridad</li>
+            <li>Calidad</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
