@@ -9,6 +9,7 @@ html{
   --negroTransparente: rgba(0, 0, 0, 0.5);
   --roboto:'Roboto', sans-serif;
   --monserat:'Montserrat', sans-serif; 
+  --poppins: 'Poppins', sans-serif;
 }
 main{
   /* background-color: #fff; */
@@ -174,6 +175,19 @@ nav > .left-nav > .left-nav-item > a{
   padding: 20px 10px;
   color: #fff;
 }
+/*=====MENSAJE=============================*/
+#mensaje > .mensaje-div{
+  background-color:#0874b3;
+  text-align: center;
+  padding: 30px;
+}
+
+#mensaje > .mensaje-div > p{
+  font-family: var(--poppins);
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
 
 /*======SERVICIOS=======================*/
 #servicios{
@@ -220,6 +234,13 @@ nav > .left-nav > .left-nav-item > a{
   
   #cover > .carousel > .overlay-carousel > h1{
     font-size: 40px;
+  }
+
+  #mensaje > .mensaje-div > p{
+    font-family: var(--poppins);
+    color: white;
+    font-size: 20px;
+    
   }
 }
 
@@ -336,5 +357,11 @@ nav > .left-nav > .left-nav-item > a{
   }
   #nosotros > .nosotros-main{
     padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  #servicios > .contenedor-servicios{
+    grid-template-columns: repeat(6, minmax(50px, 150px));
   }
 }
