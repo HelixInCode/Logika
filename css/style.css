@@ -182,6 +182,7 @@ nav > .left-nav > .left-nav-item > a{
   grid-template-rows: repeat(2, auto);
   grid-gap: 15px;
   text-align: center;
+  
   /* background-color: blueviolet; */
 }
 
@@ -197,6 +198,7 @@ nav > .left-nav > .left-nav-item > a{
   grid-template-columns: repeat(6, minmax(100px, 150px));
   grid-template-rows: repeat(2,auto);
   grid-gap: 30px;
+  justify-content: center;
 }
 #servicios > .contenedor-servicios > div > h5{
   font-family: var(--monserat);
