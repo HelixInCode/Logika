@@ -185,7 +185,6 @@ nav > .left-nav > .left-nav-item > a{
   
   /* background-color: blueviolet; */
 }
-
 #servicios > h1{
   color: #044e7d;
   font-size:  50px;
@@ -195,9 +194,10 @@ nav > .left-nav > .left-nav-item > a{
 
 #servicios > .contenedor-servicios{
   display: grid;
-  grid-template-columns: repeat(6, minmax(100px, 150px));
+  grid-template-columns: minmax(250px, 400px);
   grid-template-rows: repeat(2,auto);
-  grid-gap: 30px;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
   justify-content: center;
 }
 #servicios > .contenedor-servicios > div > h5{
@@ -205,147 +205,15 @@ nav > .left-nav > .left-nav-item > a{
   font-weight: 800;
   color: #044e7d;
 } 
-
-#servicios > .contenedor-servicios > .auto{
-  grid-column: 1/3;
+#servicios > .contenedor-servicios > .servicios-item{
   display: grid;
   grid-template-rows: repeat(2, auto);
-  justify-content: center;
-}
-#servicios > .contenedor-servicios > .auto > .cont-imagen{
-  position: relative;
-  width:auto;
-}
-
-#servicios > .contenedor-servicios > .auto > .cont-imagen > img{
-  width: 700px;
-  height: auto;
-  justify-items: center;
-  align-items: center;
-}
-
-#servicios > .contenedor-servicios > .auto > .cont-imagen > #imagen{
-  position: absolute;
-  z-index: 2;
-  top: 120px;
-  left: 260px;
-}
-#servicios > .contenedor-servicios > .auto > .cont-imagen > #imagen > img{
-  width: 180px;
-  height: auto;
-}
-
-#servicios > .contenedor-servicios > .instalacion{
-  grid-column: 3/5;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
   justify-content: center;
 }
 
-#servicios > .contenedor-servicios > .instalacion > .cont-imagen{
-  position: relative;
-  width:auto;
-}
-
-#servicios > .contenedor-servicios > .instalacion > .cont-imagen > img{
-  width: 700px;
-  height: auto;
-  justify-items: center;
-  align-items: center;
-}
-#servicios > .contenedor-servicios > .instalacion > .cont-imagen > #imagen{
-  position: absolute;
-  z-index: 2;
-  top: 120px;
-  left: 260px;
-}
-#servicios > .contenedor-servicios > .instalacion > .cont-imagen > #imagen > img{
-  width: 180px;
-  height: auto;
-}
-
-#servicios > .contenedor-servicios > .tierra{
-  grid-column: 5/7;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  justify-content: center;
-}
-#servicios > .contenedor-servicios > .tierra > .cont-imagen{
-  position: relative;
-  width:auto;
-}
-
-#servicios > .contenedor-servicios > .tierra > .cont-imagen > img{
-  width: 700px;
-  height: auto;
-  justify-items: center;
-  align-items: center;
-}
-#servicios > .contenedor-servicios > .tierra > .cont-imagen > #imagen{
-  position: absolute;
-  z-index: 2;
-  top: 120px;
-  left: 260px;
-}
-#servicios > .contenedor-servicios > .tierra > .cont-imagen > #imagen > img{
-  width: 180px;
-  height: auto;
-}
-
-#servicios > .contenedor-servicios > .economia{
-  grid-column: 2/4;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  justify-content: center;
-}
-#servicios > .contenedor-servicios > .economia > .cont-imagen{
-  position: relative;
-  width:auto;
-}
-
-#servicios > .contenedor-servicios > .economia > .cont-imagen > img{
-  width: 700px;
-  height: auto;
-  justify-items: center;
-  align-items: center;
-}
-#servicios > .contenedor-servicios > .economia > .cont-imagen > #imagen{
-  position: absolute;
-  z-index: 2;
-  top: 100px;
-  left: 290px;
-}
-#servicios > .contenedor-servicios > .economia > .cont-imagen > #imagen > img{
-  width: 100px;
-  height: auto;
-}
-
-#servicios > .contenedor-servicios > .planos{
-  grid-column: 4/6;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  justify-content: center;
-}
-#servicios > .contenedor-servicios > .planos > .cont-imagen{
-  position: relative;
-  width:auto;
-}
-
-#servicios > .contenedor-servicios > .planos > .cont-imagen > img{
-  width: 700px;
-  height: auto;
-  justify-items: center;
-  align-items: center;
-}
-#servicios > .contenedor-servicios > .planos > .cont-imagen > #imagen{
-  position: absolute;
-  z-index: 2;
-  top: 120px;
-  left: 260px;
-}
-#servicios > .contenedor-servicios > .planos > .cont-imagen > #imagen > img{
-  width: 180px;
-  height: auto;
+#servicios > .contenedor-servicios > .servicios-item > img{
+  width: 100%;
 }
 
 @media screen and (min-width: 360px){
@@ -382,6 +250,18 @@ nav > .left-nav > .left-nav-item > a{
     left: -25px;
   }
 }
+
+@media screen and (min-width: 515px){
+  #servicios > .contenedor-servicios{
+    grid-template-columns: repeat(4, minmax(50px, 170px));
+  }
+  #servicios > .contenedor-servicios > .servicios-item{
+    grid-column: 2 span;
+  }
+  #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
+    grid-column: 2/4;
+  }
+}
 @media screen and (min-width: 768px){
   #cover > .carousel > .img-container{
     top: 20px;
@@ -401,6 +281,16 @@ nav > .left-nav > .left-nav-item > a{
   #nosotros > .nosotros-values > div > p,
   #nosotros > .nosotros-values > div > ul{
     padding: 40px 20px ;
+  }
+  #servicios > .contenedor-servicios{
+    grid-template-columns: repeat(6, minmax(50px, 100px));
+  }
+  
+  #servicios > .contenedor-servicios > .servicios-item:nth-of-type(4){
+    grid-column: 2/4;
+  }
+  #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
+    grid-column: 4/6;
   }
 }
 @media screen and (min-width: 850px){
