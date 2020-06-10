@@ -1,3 +1,6 @@
+*{
+  list-style: none;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -7,6 +10,7 @@ html{
   --colorBrand3: #38b5fe;
   --blueGreen: #2999b1;
   --negroTransparente: rgba(0, 0, 0, 0.5);
+  --negroTransparenteOscuro: rgba(0, 0, 0, 0.75);
   --roboto:'Roboto', sans-serif;
   --monserat:'Montserrat', sans-serif; 
   --poppins: 'Poppins', sans-serif;
@@ -28,7 +32,6 @@ nav > .left-nav{
   
   padding: 5px 0;
   margin: 0;
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
@@ -169,7 +172,6 @@ nav > .left-nav > .left-nav-item > a{
 }
 #nosotros > .nosotros-values > div > p,
 #nosotros > .nosotros-values > div > ul{
-  list-style: none;
   margin: 0;
   font-size: 20px;
   padding: 20px 10px;
@@ -180,13 +182,20 @@ nav > .left-nav > .left-nav-item > a{
   background-color:#0874b3;
   text-align: center;
   padding: 30px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #mensaje > .mensaje-div > p{
-  font-family: var(--poppins);
   color: white;
   font-size: 30px;
   font-weight: 500;
+  font-family: var(--poppins);
+}
+#mensaje > .mensaje-div > p:nth-of-type(2){
+  font-weight: bold;
 }
 
 /*======SERVICIOS=======================*/
@@ -229,6 +238,53 @@ nav > .left-nav > .left-nav-item > a{
 #servicios > .contenedor-servicios > .servicios-item > img{
   width: 100%;
 }
+footer{
+  color: #fff;
+  background-color: #3a4247;
+  margin-bottom: 49px;
+}
+footer h4{
+  text-align: center;
+  font-weight: bold;
+}
+footer hr{
+  border-bottom: 5px solid var(--colorBrand2) ;
+}
+
+footer > .footer-main ul{
+  margin: 0;
+  padding: 0;
+}
+footer > .footer-main ul > li{
+  padding: 5px 0;
+  font-weight: 400;
+}
+footer > .footer-main ul > li > a{
+  color: #fff;
+}
+footer > .footer-main{
+  display: grid;
+  grid-template-columns: minmax(300px, 450px);
+  justify-content: center;
+  gap: 10px;
+}
+footer > .footer-main > .img-container{
+  margin: auto;
+  padding-bottom: 15px;
+}
+footer > .footer-main > .img-container > img{
+  width: 250px;
+}
+footer > .footer-main > .footer-services > ul{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+footer > .copyright-footer{
+  background-color: var(--negroTransparente);
+  text-align: center;
+}
 
 @media screen and (min-width: 360px){
   
@@ -243,7 +299,6 @@ nav > .left-nav > .left-nav-item > a{
     
   }
 }
-
 @media screen and (min-width: 425px){
   #nosotros > .nosotros-values > div{
     grid-template-columns: 40px 1fr;
@@ -271,7 +326,6 @@ nav > .left-nav > .left-nav-item > a{
     left: -25px;
   }
 }
-
 @media screen and (min-width: 515px){
   #servicios > .contenedor-servicios{
     grid-template-columns: repeat(4, minmax(50px, 170px));
@@ -281,6 +335,24 @@ nav > .left-nav > .left-nav-item > a{
   }
   #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
     grid-column: 2/4;
+  }
+}
+@media screen and (min-width: 610px){
+  footer > .footer-main > .img-container{
+  padding-bottom: 0;
+  display: none;
+  }
+  footer > .footer-main > .img-container > img{
+    width: 100%;
+  }
+  footer > .footer-main{
+    grid-template-columns: minmax(364px, 400px) minmax(200px, 300px);
+  }
+  footer > .footer-main >  ul{
+    padding: 0;
+  }
+  footer > .footer-main > .footer-services > ul{
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 768px){
@@ -355,13 +427,31 @@ nav > .left-nav > .left-nav-item > a{
   #cover > .carousel > .carousel-inner > .carousel-item{
     height: 100vh;
   }
+
   #nosotros > .nosotros-main{
     padding-right: 60px;
+  }
+
+  footer{
+    margin-bottom: 0;
+  }
+  footer > .footer-main{
+    grid-template-columns: minmax(200px, 367px) minmax(364px, 400px) minmax(200px, 400px);
+  }
+  footer > .footer-main > .img-container{
+    margin: auto 0;
+    display: block;
   }
 }
 
 @media screen and (min-width: 1500px){
-  #servicios > .contenedor-servicios{
-    grid-template-columns: repeat(6, minmax(50px, 150px));
+  #mensaje > .mensaje-div > p {
+    font-size: 30px;
   }
+  #servicios > .contenedor-servicios{
+    grid-template-columns: repeat(6, minmax(50px, 120px));
+  }
+  #servicios > .contenedor-servicios > div > h5 {
+    font-size: 24px;
+}
 }
