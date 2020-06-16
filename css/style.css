@@ -11,6 +11,7 @@ html{
   --blueGreen: #2999b1;
   --negroTransparente: rgba(0, 0, 0, 0.5);
   --negroTransparenteOscuro: rgba(0, 0, 0, 0.75);
+  --colorBrandTrasparente: #044f7da8;
   --roboto:'Roboto', sans-serif;
   --monserat:'Montserrat', sans-serif; 
   --poppins: 'Poppins', sans-serif;
@@ -346,6 +347,114 @@ nav > .left-nav > .left-nav-item > a{
 }
 
 
+/*==============CONTACTO===============*/
+#contacto{
+  background: url(../img/back-form.jpg);
+  position: relative;
+  /* z-index: 2; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: minmax(300px, 1300px);
+  grid-template-rows: repeat(2, auto);
+}
+
+#contacto > div > h1{
+  color: #fdfdfd;
+  font-size: 30px;
+  font-family: var(--roboto);
+  font-weight: 500;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+#contacto > div > .cuerpo-form{
+  display: grid;
+  grid-template-columns: minmax(150px, 800px) minmax(150px, 400px);
+  background-color: var(--colorBrandTrasparente);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+#contacto > div > div > form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+#contacto > div > div> form > .primer-bloque{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 350px));
+  text-align: center;
+}
+
+#contacto > div > div > form > div> .input-container{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 5px;
+}
+#contacto > div > div > form > div> .input-container > i{
+  margin: auto auto;
+  color: white;
+  font-size: 20px;
+}
+#contacto > div > div > form > div > .input-container > input,
+#contacto > div > div > form > .input-container > textarea{
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid white;
+  color: white;
+  padding-bottom: 5px; 
+  font-size: 20px; 
+}
+#contacto > div > div > form > div > .input-container > input{
+  width: 100%;
+}
+#contacto > div > div > form > .input-container > textarea{
+  width: 100%;
+  resize: none;
+  margin-top: 30px;
+}
+#contacto > div > div > form > .input-container:nth-of-type(3){
+  /* background-color: brown; */
+  text-align: center;
+}
+#contacto > div > div > form > .input-container:nth-of-type(3) > button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border: 2px solid var(--colorBrand3);
+  color: white;
+  padding: 10px 50px;
+  font-family: var(--roboto);
+  letter-spacing: 1px;
+}
+
+#contacto > div > div > .redes{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4,auto);
+  
+}
+#contacto > div > div > .redes > div{
+  display: grid;
+  grid-template-columns:30px 1fr;
+  grid-gap: 25px;
+  padding: 10px;
+  border-left: 4px solid white;
+  padding-left: 30px;
+}
+#contacto > div > div > .redes > div > img{
+  width: 45px;
+  height: auto;
+}
+#contacto > div > div > .redes > div > a{
+   color: white;
+   font-size: 25px;
+   font-family: var(--roboto);
+   
+}
+/*FOOTER*/
 footer{
   color: #fff;
   background-color: #3a4247;
@@ -407,6 +516,28 @@ footer > .copyright-footer{
     font-size: 20px;
     
   }
+  #contacto > div > h1{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+  }
+  #contacto > div > .cuerpo-form{
+    grid-template-columns: 1fr;
+  }
+  #contacto > div > div> form > .primer-bloque{
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+  #contacto > div > div > .redes > div{
+    border-left: none;
+  }
+  #contacto > div > div > .redes > div > img{
+    width: 30px;
+    height: auto;
+  }
+  #contacto > div > div > .redes > div > a{
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 375px){
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
@@ -439,6 +570,16 @@ footer > .copyright-footer{
   #nosotros > .nosotros-values > div:nth-of-type(3) > .values-title > h3{
     left: -25px;
   }
+  #contacto > div > div > .redes > div{
+    border-left: none;
+  }
+  #contacto > div > div > .redes > div > img{
+    width: 30px;
+    height: auto;
+  }
+  #contacto > div > div > .redes > div > a{
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 515px){
   #servicios > .contenedor-servicios{
@@ -449,6 +590,17 @@ footer > .copyright-footer{
   }
   #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
     grid-column: 2/4;
+  }
+  
+  #contacto > div > div > .redes > div{
+    border-left: none;
+  }
+  #contacto > div > div > .redes > div > img{
+    width: 30px;
+    height: auto;
+  }
+  #contacto > div > div > .redes > div > a{
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 610px){
@@ -507,6 +659,104 @@ footer > .copyright-footer{
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
     font-size: 12px;
   }
+    
+  #contacto > div > div > form > div> .input-container > i{
+    margin: auto auto;
+    color: white;
+    font-size: 15px;
+  }
+  #contacto > div > div > form > div > .input-container > input,
+  #contacto > div > div > form > .input-container > textarea{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid white;
+    color: white;
+    padding-bottom: 5px; 
+    font-size: 15px; 
+  }
+  #contacto > div > .cuerpo-form{
+    display: grid;
+    grid-template-columns: minmax(150px, 800px) minmax(150px, 400px);
+    background-color: var(--colorBrandTrasparente);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+  }
+  #contacto > div > div > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  #contacto > div > div> form > .primer-bloque{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 350px));
+    text-align: center;
+  }
+  
+  #contacto > div > div > form > div> .input-container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 5px;
+  }
+  #contacto > div > div > form > div> .input-container > i{
+    margin: auto auto;
+    color: white;
+    font-size: 20px;
+  }
+  #contacto > div > div > form > div > .input-container > input,
+  #contacto > div > div > form > .input-container > textarea{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid white;
+    color: white;
+    padding-bottom: 5px; 
+    font-size: 20px; 
+  }
+  #contacto > div > div > form > div > .input-container > input{
+    width: 100%;
+  }
+  #contacto > div > div > form > .input-container > textarea{
+    width: 100%;
+    resize: none;
+    margin-top: 30px;
+  }
+  #contacto > div > div > form > .input-container:nth-of-type(3){
+    /* background-color: brown; */
+    text-align: center;
+  }
+  #contacto > div > div > form > .input-container:nth-of-type(3) > button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border: 2px solid var(--colorBrand3);
+    color: white;
+    padding: 10px 50px;
+    font-family: var(--roboto);
+    letter-spacing: 1px;
+  }
+  
+  #contacto > div > div > .redes{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto);
+    
+  }
+  #contacto > div > div > .redes > div{
+    display: grid;
+    grid-template-columns:30px 1fr;
+    grid-gap: 25px;
+    padding: 10px;
+    border-left: 4px solid white;
+    padding-left: 30px;
+  }
+  #contacto > div > div > .redes > div > img{
+    width: 45px;
+    height: auto;
+  }
+  #contacto > div > div > .redes > div > a{
+     color: white;
+     font-size: 25px;
+     font-family: var(--roboto);
+     
+  }
 }
 @media screen and (min-width: 850px){
   body{
@@ -553,7 +803,10 @@ footer > .copyright-footer{
   #nosotros > .nosotros-main{
     padding-right: 60px;
   }
-
+  #contacto > div > h1{
+    text-align: start;
+    padding-left: 100px;
+  }
   footer{
     margin-bottom: 0;
   }
@@ -579,5 +832,8 @@ footer > .copyright-footer{
   }
   #servicios > .contenedor-servicios > div > h5 {
     font-size: 24px;
-}
+  }
+  #contacto > div{
+    justify-items: center;
+  }
 }
