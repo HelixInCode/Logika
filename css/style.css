@@ -690,7 +690,6 @@ footer > .copyright-footer{
     grid-template-columns: repeat(2, minmax(100px, 350px));
     text-align: center;
   }
-  
   #contacto > div > div > form > div> .input-container{
     padding: 10px;
     display: grid;
@@ -732,7 +731,6 @@ footer > .copyright-footer{
     font-family: var(--roboto);
     letter-spacing: 1px;
   }
-  
   #contacto > div > div > .redes{
     display: grid;
     grid-template-columns: auto;
