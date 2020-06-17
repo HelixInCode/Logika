@@ -183,7 +183,8 @@ nav > .left-nav > .left-nav-item > a{
   background-color:#0874b3;
   text-align: center;
   padding: 30px;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 384px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +192,7 @@ nav > .left-nav > .left-nav-item > a{
 
 #mensaje > .mensaje-div > p{
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   font-family: var(--poppins);
 }
@@ -350,77 +351,79 @@ nav > .left-nav > .left-nav-item > a{
 /*==============CONTACTO===============*/
 #contacto{
   background: url(../img/back-form.jpg);
-  position: relative;
-  /* z-index: 2; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: grid;
-  grid-template-columns: minmax(300px, 1300px);
+  grid-template-columns: minmax(300px, 600px);
   grid-template-rows: repeat(2, auto);
+  justify-content: center;
 }
 
-#contacto > div > h1{
+#contacto > h1{
   color: #fdfdfd;
   font-size: 30px;
   font-family: var(--roboto);
   font-weight: 500;
-  padding-left: 100px;
   padding-bottom: 30px;
-  letter-spacing: 3px;
+  text-align: center;
 }
-
-#contacto > div > .cuerpo-form{
+#contacto > .form-body{
+  border: none;
   display: grid;
-  grid-template-columns: minmax(150px, 800px) minmax(150px, 400px);
+  grid-template-columns: 1fr;
   background-color: var(--colorBrandTrasparente);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
 }
-#contacto > div > div > form{
+#contacto > .form-body > form{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
 }
-#contacto > div > div> form > .primer-bloque{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(100px, 350px));
-  text-align: center;
+#contacto > .form-body > form i{
+  margin: auto auto;
+  color: white;
+  font-size: 20px;
 }
-
-#contacto > div > div > form > div> .input-container{
+#contacto > .form-body > form > .input-container,
+#contacto > .form-body > form > .textarea-container{
   padding: 10px;
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-gap: 5px;
 }
-#contacto > div > div > form > div> .input-container > i{
-  margin: auto auto;
-  color: white;
-  font-size: 20px;
-}
-#contacto > div > div > form > div > .input-container > input,
-#contacto > div > div > form > .input-container > textarea{
+#contacto > .form-body > form > .input-container > input,
+#contacto > .form-body > form > .textarea-container > textarea{
   border: none;
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 2px solid white;
+  outline: none;
   color: white;
   padding-bottom: 5px; 
   font-size: 20px; 
 }
-#contacto > div > div > form > div > .input-container > input{
+#contacto > .form-body > form > .input-container > input{
   width: 100%;
+  mix-blend-mode: screen;
 }
-#contacto > div > div > form > .input-container > textarea{
+#contacto > .form-body > form > .textarea-container{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#contacto > .form-body > form > .textarea-container > i{
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+#contacto > .form-body > form > .textarea-container > textarea{
   width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.25);
   resize: none;
-  margin-top: 30px;
 }
-#contacto > div > div > form > .input-container:nth-of-type(3){
-  /* background-color: brown; */
+#contacto > .form-body > form > .button{
   text-align: center;
 }
-#contacto > div > div > form > .input-container:nth-of-type(3) > button{
+#contacto > .form-body > form > .button > button{
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border: 2px solid var(--colorBrand3);
@@ -429,31 +432,36 @@ nav > .left-nav > .left-nav-item > a{
   font-family: var(--roboto);
   letter-spacing: 1px;
 }
-
-#contacto > div > div > .redes{
+#contacto > .form-body > .form-division{
+  border: none;
+  height: 4px;
+  width: calc(100% - 36px);
+  background-color: #fff;
+}
+#contacto > .form-body > .redes{
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(4,auto);
-  
 }
-#contacto > div > div > .redes > div{
+#contacto > .form-body > .redes > div{
   display: grid;
-  grid-template-columns:30px 1fr;
-  grid-gap: 25px;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  margin: auto 0;
   padding: 10px;
-  border-left: 4px solid white;
   padding-left: 30px;
 }
-#contacto > div > div > .redes > div > img{
+#contacto > .form-body > .redes > div > img{
   width: 45px;
   height: auto;
 }
-#contacto > div > div > .redes > div > a{
-   color: white;
-   font-size: 25px;
-   font-family: var(--roboto);
-   
+#contacto > .form-body > .redes > div > a{
+  margin: auto 0;
+  color: white;
+  font-size: 25px;
+  font-family: var(--roboto);
 }
+
 /*FOOTER*/
 footer{
   color: #fff;
@@ -467,7 +475,6 @@ footer h4{
 footer hr{
   border-bottom: 5px solid var(--colorBrand2) ;
 }
-
 footer > .footer-main ul{
   margin: 0;
   padding: 0;
@@ -496,13 +503,10 @@ footer > .footer-main > .footer-services > ul{
   display: grid;
   grid-template-columns: 1fr;
 }
-
-
 footer > .copyright-footer{
   background-color: var(--negroTransparente);
   text-align: center;
 }
-
 
 @media screen and (min-width: 360px){
   
@@ -513,29 +517,14 @@ footer > .copyright-footer{
   #mensaje > .mensaje-div > p{
     font-family: var(--poppins);
     color: white;
-    font-size: 20px;
-    
   }
-  #contacto > div > h1{
+
+  #contacto > h1{
     font-size: 20px;
     text-align: center;
-    padding-left: 0;
+    letter-spacing: 3px;
   }
-  #contacto > div > .cuerpo-form{
-    grid-template-columns: 1fr;
-  }
-  #contacto > div > div> form > .primer-bloque{
-    grid-template-columns: 1fr;
-    margin-right: 20px;
-  }
-  #contacto > div > div > .redes > div{
-    border-left: none;
-  }
-  #contacto > div > div > .redes > div > img{
-    width: 30px;
-    height: auto;
-  }
-  #contacto > div > div > .redes > div > a{
+  #contacto > .form-body > .redes > div > a{
     font-size: 20px;
   }
 }
@@ -570,16 +559,10 @@ footer > .copyright-footer{
   #nosotros > .nosotros-values > div:nth-of-type(3) > .values-title > h3{
     left: -25px;
   }
-  #contacto > div > div > .redes > div{
-    border-left: none;
-  }
-  #contacto > div > div > .redes > div > img{
-    width: 30px;
-    height: auto;
-  }
-  #contacto > div > div > .redes > div > a{
-    font-size: 20px;
-  }
+
+  /* #contacto > .form-body > form > .textarea-container{
+    padding-left: 45px;
+  } */
 }
 @media screen and (min-width: 515px){
   #servicios > .contenedor-servicios{
@@ -590,17 +573,6 @@ footer > .copyright-footer{
   }
   #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
     grid-column: 2/4;
-  }
-  
-  #contacto > div > div > .redes > div{
-    border-left: none;
-  }
-  #contacto > div > div > .redes > div > img{
-    width: 30px;
-    height: auto;
-  }
-  #contacto > div > div > .redes > div > a{
-    font-size: 20px;
   }
 }
 @media screen and (min-width: 610px){
@@ -629,6 +601,7 @@ footer > .copyright-footer{
   #cover > .carousel > .img-container > img{
     width: 200px;
   }
+
   #nosotros{
     grid-template-columns: 1fr .9fr;
     grid-gap: unset;
@@ -641,10 +614,10 @@ footer > .copyright-footer{
   #nosotros > .nosotros-values > div > ul{
     padding: 40px 20px ;
   }
+
   #servicios > .contenedor-servicios{
     grid-template-columns: repeat(6, minmax(50px, 100px));
   }
-  
   #servicios > .contenedor-servicios > .servicios-item:nth-of-type(4){
     grid-column: 2/4;
   }
@@ -659,102 +632,34 @@ footer > .copyright-footer{
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
     font-size: 12px;
   }
-    
-  #contacto > div > div > form > div> .input-container > i{
-    margin: auto auto;
-    color: white;
-    font-size: 15px;
+
+  #contacto {
+    grid-template-columns: minmax(300px, 1300px);
   }
-  #contacto > div > div > form > div > .input-container > input,
-  #contacto > div > div > form > .input-container > textarea{
+  #contacto > .form-body{
+    grid-template-columns: minmax(150px, 800px) minmax(0px, 50px) auto;
+  }
+  #contacto > .form-body > form{
+    grid-template-columns: 1fr 1fr;
+  }
+  #contacto > .form-body > .form-division{
     border: none;
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 2px solid white;
-    color: white;
-    padding-bottom: 5px; 
-    font-size: 15px; 
+    width: 4px;
+    height: 314px;
+    align-self: center;
+    background-color: #fff;
   }
-  #contacto > div > .cuerpo-form{
-    display: grid;
-    grid-template-columns: minmax(150px, 800px) minmax(150px, 400px);
-    background-color: var(--colorBrandTrasparente);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
-  }
-  #contacto > div > div > form{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-  }
-  #contacto > div > div> form > .primer-bloque{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 350px));
-    text-align: center;
-  }
-  #contacto > div > div > form > div> .input-container{
+  #contacto > .form-body > form > .input-container{
     padding: 10px;
     display: grid;
     grid-template-columns: 30px 1fr;
     grid-gap: 5px;
   }
-  #contacto > div > div > form > div> .input-container > i{
-    margin: auto auto;
-    color: white;
-    font-size: 20px;
+  #contacto > .form-body > form > .textarea-container,
+  #contacto > .form-body > form > .button{
+    grid-column: 2 span;
   }
-  #contacto > div > div > form > div > .input-container > input,
-  #contacto > div > div > form > .input-container > textarea{
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 2px solid white;
-    color: white;
-    padding-bottom: 5px; 
-    font-size: 20px; 
-  }
-  #contacto > div > div > form > div > .input-container > input{
-    width: 100%;
-  }
-  #contacto > div > div > form > .input-container > textarea{
-    width: 100%;
-    resize: none;
-    margin-top: 30px;
-  }
-  #contacto > div > div > form > .input-container:nth-of-type(3){
-    /* background-color: brown; */
-    text-align: center;
-  }
-  #contacto > div > div > form > .input-container:nth-of-type(3) > button{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border: 2px solid var(--colorBrand3);
-    color: white;
-    padding: 10px 50px;
-    font-family: var(--roboto);
-    letter-spacing: 1px;
-  }
-  #contacto > div > div > .redes{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4,auto);
-    
-  }
-  #contacto > div > div > .redes > div{
-    display: grid;
-    grid-template-columns:30px 1fr;
-    grid-gap: 25px;
-    padding: 10px;
-    border-left: 4px solid white;
-    padding-left: 30px;
-  }
-  #contacto > div > div > .redes > div > img{
-    width: 45px;
-    height: auto;
-  }
-  #contacto > div > div > .redes > div > a{
-     color: white;
-     font-size: 25px;
-     font-family: var(--roboto);
-     
-  }
+
 }
 @media screen and (min-width: 850px){
   body{
@@ -801,10 +706,12 @@ footer > .copyright-footer{
   #nosotros > .nosotros-main{
     padding-right: 60px;
   }
-  #contacto > div > h1{
+
+  #contacto > h1{
     text-align: start;
     padding-left: 100px;
   }
+  
   footer{
     margin-bottom: 0;
   }
@@ -830,8 +737,5 @@ footer > .copyright-footer{
   }
   #servicios > .contenedor-servicios > div > h5 {
     font-size: 24px;
-  }
-  #contacto > div{
-    justify-items: center;
   }
 }
