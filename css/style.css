@@ -290,9 +290,9 @@ nav > .left-nav > .left-nav-item > a{
   
   /* background-color: blueviolet; */
 }
-#servicios > h1{
+#servicios > h2{
   color: #044e7d;
-  font-size:  50px;
+  font-size:  30px;
   font-family: var(--roboto);
   font-weight: 500;
 }
@@ -809,6 +809,7 @@ footer > .copyright-footer{
   }
 }
 @media screen and (min-width: 1500px){
+
   #mensaje > .mensaje-div > p {
     font-size: 30px;
   }
@@ -818,4 +819,88 @@ footer > .copyright-footer{
   #servicios > .contenedor-servicios > div > h5 {
     font-size: 24px;
   }
+}
+
+@media screen and (min-width: 1800px){
+  #cover > .carousel > .overlay-carousel{
+    grid-gap: 20px;
+  }
+  #cover > .carousel > .overlay-carousel > h1{
+    font-size: 45px;
+  }
+  #nosotros > .nosotros-main > h2{
+    font-size: 40px;
+  }
+  #nosotros > .nosotros-main p{
+    font-size: 30px ;
+  }
+  #nosotros > .nosotros-values > div > .values-title > h3{
+    font-size: 30px;
+  }
+  #nosotros > .nosotros-values > div > p,
+  #nosotros > .nosotros-values > div > ul{
+    font-size: 25px
+  }
+  #servicios > h2{
+    color: #044e7d;
+    font-size:  40px;
+    font-family: var(--roboto);
+    font-weight: 500;
+  }
+  #servicios > .contenedor-servicios {
+    grid-gap: 60px;
+    margin-bottom: 50px;
+  }
+  #servicios > .contenedor-servicios > .servicios-item > h5{
+    font-size: 30px;
+  }
+  #servicios > .contenedor-servicios > .servicios-item > img{
+    width: 300px;
+    height: 300px;
+  }
+  #portafolio h2{
+    font-size: 40px;
+  }
+  #portafolio > .portafolio-container > .portafolio-item > .item-description > p {
+    font-size: 23px;
+  }
+  #portafolio > .portafolio-container > .portafolio-item > .item-description > div > span {
+    font-size: 20px;
+  }
+  #portafolio > .portafolio-container > .portafolio-item > .item-description > div > .btn {
+    font-size: 23px;
+  }
+  #contacto > h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #contacto > .form-body > .redes > div > a {
+    font-size: 25px;
+  }
+  footer > .footer-main {
+    margin-bottom: 40px;
+  }
+  footer > .footer-main > .img-container > img{
+    padding-right: 50px;
+    width: 350px;
+    height: auto;
+  }
+  footer > .footer-main ul{
+    grid-gap: 20px;
+  }
+  footer > .footer-main ul > li {
+    align-self: center;
+  }
+  footer > .footer-main ul > li > a {
+    font-size: 20px;
+  }
+  footer > .footer-contact > ul > li{
+    margin: 70px;
+  }
+  footer > .copyright-footer{
+    font-size: 25px;
+    padding: 20px;
+  }
+
 }
