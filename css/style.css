@@ -813,6 +813,9 @@ footer > .copyright-footer{
   nav > .left-nav > .left-nav-item{
     padding: 15px 3px;
   }
+  nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
+    border: 1px solid #fff;
+  }
   nav > .left-nav > .left-nav-item > img{
     height: unset;
     width: 40px;
