@@ -71,11 +71,22 @@ nav > .left-nav > .left-nav-item:nth-of-type(2) > img{
   height: 45px;
   padding: 10px;
 }
-nav > .left-nav > .left-nav-item:nth-of-type(3) > img{
+/* nav > .left-nav > .left-nav-item:nth-of-type(3) > i{
   width: 45px;
   height: 45px;
-  padding: 10px;
+  padding-top: 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+} */
+nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
+  padding: 10.5px 0;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
+
 nav > .left-nav > .left-nav-item:nth-of-type(4) > img{
   width: 45px;
   height: 45px;
@@ -621,8 +632,15 @@ footer > .copyright-footer{
   text-align: center;
 }
 
-@media screen and (min-width: 360px){
-  
+@media screen and (min-width: 355px){
+  nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
+    border: none;
+  }
+  nav > .left-nav > .left-nav-item > img{
+    width: 35px;
+    border: none;
+    padding: 10px;
+  }
   #cover > .carousel > .overlay-carousel > h1{
     font-size: 40px;
   }
@@ -640,16 +658,11 @@ footer > .copyright-footer{
   #contacto > .form-body > .redes > div > a{
     font-size: 20px;
   }
-}
-@media screen and (min-width: 355px){
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
     font-size: 16px;
   }
-  nav > .left-nav > .left-nav-item > img{
-    width: 35px;
-    border: none;
-    padding: 10px;
-  }
+  
+  
 }
 @media screen and (min-width: 425px){
   #nosotros > .nosotros-values > div{
@@ -844,6 +857,9 @@ footer > .copyright-footer{
 @media screen and (min-width: 992px){
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
     font-size: 16px;
+  }
+  nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
+    border: 1px solid #fff;
   }
 }
 @media screen and (min-width: 1500px){
