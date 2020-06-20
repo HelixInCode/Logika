@@ -48,55 +48,22 @@ nav > .left-nav > .left-nav-item{
 nav > .left-nav > .left-nav-item:hover{
   background-color: var(--blueGreen);
 }
+
+
+nav > .left-nav > .left-nav-item > i,
 nav > .left-nav > .left-nav-item > img{
-  height: 39px;
-}
-nav > .left-nav > .left-nav-item:last-of-type img{
-  transform: rotateY(180deg);
-  
-}
-nav > .left-nav > .left-nav-item > img{
-  width: 60px;
-  border: 1px solid white;
-  border-radius: 50px;
-  padding: 10px;
-}
-nav > .left-nav > .left-nav-item:nth-of-type(1) > img{
-  width: 45px;
-  height: 45px;
-  padding: 10px;
-}
-nav > .left-nav > .left-nav-item:nth-of-type(2) > img{
-  width: 45px;
-  height: 45px;
-  padding: 10px;
-}
-/* nav > .left-nav > .left-nav-item:nth-of-type(3) > i{
-  width: 45px;
-  height: 45px;
-  padding-top: 10px;
-  border: 1px solid white;
-  border-radius: 50px;
-} */
-nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
-  padding: 10.5px 0;
-  width: 42px;
-  height: 42px;
-  font-size: 20px;
-  border: 1px solid #fff;
-  border-radius: 50%;
+  width: 21px;
+  height: 21px;
 }
 
-nav > .left-nav > .left-nav-item:nth-of-type(4) > img{
-  width: 45px;
-  height: 45px;
-  padding: 10px;
+nav > .left-nav > .left-nav-item > i{
+  font-size: 17px;
 }
-nav > .left-nav > .left-nav-item:nth-of-type(5) > img{
-  width: 45px;
-  height: 45px;
-  padding: 10px;
+
+nav > .left-nav > .left-nav-item:last-of-type img{
+  transform: rotateY(180deg);
 }
+
 nav > .left-nav > .left-nav-item span{
   display: block;
   font-size: 10px;
@@ -303,8 +270,11 @@ nav > .left-nav > .left-nav-item > a{
   color: #fff;
 }
 /*=====MENSAJE=============================*/
-#mensaje > .mensaje-div{
+#mensaje{
+  position: relative;
   background-color:#0874b3;
+}
+#mensaje > .mensaje-div{
   text-align: center;
   padding: 30px;
   /* height: 50vh; */
@@ -322,6 +292,13 @@ nav > .left-nav > .left-nav-item > a{
 }
 #mensaje > .mensaje-div > p:nth-of-type(2){
   font-weight: bold;
+}
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /*======SERVICIOS=======================*/
@@ -633,14 +610,6 @@ footer > .copyright-footer{
 }
 
 @media screen and (min-width: 355px){
-  nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
-    border: none;
-  }
-  nav > .left-nav > .left-nav-item > img{
-    width: 35px;
-    border: none;
-    padding: 10px;
-  }
   #cover > .carousel > .overlay-carousel > h1{
     font-size: 40px;
   }
@@ -813,20 +782,18 @@ footer > .copyright-footer{
   nav > .left-nav > .left-nav-item{
     padding: 15px 3px;
   }
-  nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
-    border: 1px solid #fff;
-  }
+  nav > .left-nav > .left-nav-item > i,
   nav > .left-nav > .left-nav-item > img{
-    height: unset;
-    width: 40px;
-  }
-  nav > .left-nav > .left-nav-item img{
-    padding: 10.5px 0;
     width: 42px;
     height: 42px;
-    font-size: 20px;
     border: 1px solid #fff;
     border-radius: 50%;
+  }
+  nav > .left-nav > .left-nav-item > i{
+    padding: 10.5px 0;
+  }
+  nav > .left-nav > .left-nav-item > img{
+    padding: 10px;
   }
   nav > .left-nav > .left-nav-item span{
     font-size: 16px;
