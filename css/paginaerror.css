@@ -1,5 +1,5 @@
 body {
-  width: 80%;
+ 
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,7 +7,16 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #000000e3;
-  font-family: consola;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../img/fondo.png);
+  }
+
+  .error{
+    
+      background-color: #132740a3;
+      width: 40%;
+      height: 50%;
   }
 
   h1 {
@@ -15,7 +24,7 @@ body {
   font-size: 65px;
   }
 
-  span {
+  h3 {
   color: #5fe2e8;
   font-size: 40px;
   }

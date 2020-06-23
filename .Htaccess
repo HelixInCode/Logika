@@ -1,5 +1,7 @@
 Options All -Indexes
 
+ErrorDocument 404 /proyectos/Logika/Logika-1/page404.html
+
 RewriteEngine on
 
 RewriteRule  ^([a-zA-Z0-9/]+)$ $1.html
