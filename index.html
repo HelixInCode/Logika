@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Social-bar</title>
 </head>
 <body>
   <style>
@@ -70,8 +73,13 @@
           </a>
         </li>
       </ul>
+
+      <a id="facebook" class="whatsapp-btn" href="https://www.facebook.com/helixincode.ar/" target="_blank">
+        <i class="fab fa-whatsapp fa-1x"></i>
+      </a>
+
     </nav>
-    
+ 
   </header>
 
   <main>
@@ -315,10 +323,10 @@
 
         <div class="portafolio-item">
           <div class="item-image">
-            <img class="img-fluid" src="img/cit.png" alt="helix portafolio CIT">
+            <img class="img-fluid" src="img/portafolio-item-1.jpg" alt="helix portafolio CIT">
           </div>
           <div class="item-description">
-            <p>...</p>
+            <p>Instalación eléctrica Industrial y lógica cableada</p>
             <div> 
               <span>Toca para cerrar</span>
               <a target="_blank" href="https://orlandomendoza17.github.io/CIT/" class="btn waves-effect waves-light">Ver</a>
@@ -332,10 +340,10 @@
 
         <div class="portafolio-item">
           <div class="item-image">
-            <img class="img-fluid" src="img/wash.png" alt="helix portafolio Wash">
+            <img class="img-fluid" src="img/portafolio-item-2.jpg" alt="helix portafolio Wash">
           </div>
           <div class="item-description">
-            <p>...</p>
+            <p>Instalación eléctrica en exteriores</p>
             <div> 
               <span>Toca para cerrar</span>
               <a target="_blank" href="https://www.washchile.cl" class="btn waves-effect waves-light">Ver</a>
@@ -349,64 +357,13 @@
         
         <div class="portafolio-item">
           <div class="item-image">
-            <img class="img-fluid" src="img/smc.png" alt="helix portafolio SMC de Venezuela">
+            <img class="img-fluid" src="img/portafolio-item-3.jpg" alt="helix portafolio SMC de Venezuela">
           </div>
           <div class="item-description">
-            <p>...</p>
+            <p>Taller metalúrgico con ahorro energético</p>
             <div> 
               <span>Toca para cerrar</span>
               <a target="_blank" href="http://cit-unitec.000webhostapp.com/index.html" class="btn waves-effect waves-light">Ver</a>
-            </div>
-          </div>
-          
-          <div class="portafolio-overlay">
-            <i class="fas fa-search fa-2x"></i>
-          </div>
-        </div>
-
-        <div class="portafolio-item">
-          <div class="item-image">
-            <img class="img-fluid" src="img/smc.png" alt="helix portafolio SMC de Venezuela">
-          </div>
-          <div class="item-description">
-            <p>...</p>
-            <div> 
-              <span>Toca para cerrar</span>
-              <a target="_blank" href="http://cit-unitec.000webhostapp.com/index.html" class="btn waves-effect waves-light">Ver</a>
-            </div>
-          </div>
-          
-          <div class="portafolio-overlay">
-            <i class="fas fa-search fa-2x"></i>
-          </div>
-        </div>
-
-        <div class="portafolio-item">
-          <div class="item-image">
-            <img class="img-fluid" src="img/cit.png" alt="helix portafolio CIT">
-          </div>
-          <div class="item-description">
-            <p>...</p>
-            <div> 
-              <span>Toca para cerrar</span>
-              <a target="_blank" href="https://orlandomendoza17.github.io/CIT/" class="btn waves-effect waves-light">Ver</a>
-            </div>
-          </div>
-          
-          <div class="portafolio-overlay">
-            <i class="fas fa-search fa-2x"></i>
-          </div>
-        </div>
-
-        <div class="portafolio-item">
-          <div class="item-image">
-            <img class="img-fluid" src="img/wash.png" alt="helix portafolio Wash">
-          </div>
-          <div class="item-description">
-            <p>...</p>
-            <div> 
-              <span>Toca para cerrar</span>
-              <a target="_blank" href="https://www.washchile.cl" class="btn waves-effect waves-light">Ver</a>
             </div>
           </div>
           
@@ -429,31 +386,33 @@
 
           <div class="input-container">
             <i class="fas fa-user"></i>
-            <input name="nombre" type="text" placeholder="Nombre">
+            <input name="nombre" type="text" placeholder="Nombre" id="nombre">
           </div>
 
           <div class="input-container">
             <i class="fas fa-at"></i>
-            <input name="email" type="email" placeholder="Email">
+            <input name="email" type="email" placeholder="Email" id="email">
           </div>
 
           <div class="input-container">
             <i class="fas fa-phone-alt"></i>
-            <input name="telefono" type="tel" placeholder="Teléfono">
+            <input name="telefono" type="tel" placeholder="Teléfono" id="telefono">
           </div>
 
           <div class="input-container">
             <i class="fas fa-pen-alt"></i>
-            <input name="asunto" type="text" placeholder="Asunto">
+            <input name="asunto" type="text" placeholder="Asunto" id="asunto">
           </div>
 
           <div class="textarea-container py-3">
             <i class="fas fa-envelope"></i>
-            <textarea name="mensaje"></textarea>
+            <textarea name="mensaje" id="mensaje-form"></textarea>
           </div>
 
+          <img class="animated" id="img-check" src="./img/check.svg" alt="">
+
           <div class="button p-2">
-            <button type="submit" class="brillocontacto">Enviar</button>
+            <button id="btn-enviar" type="submit" class="brillocontacto">Enviar</button>
           </div>
 
         </form>
@@ -477,10 +436,10 @@
             <a href="#">@instagram</a>
           </div>
 
-          <div class="red-item">
+          <!-- <div class="red-item">
             <img src="./img/redes/twitter.png" alt="">
             <a href="#">/twitter</a>
-          </div>
+          </div> -->
 
         </div>
 
@@ -520,27 +479,24 @@
           <ul>
             <li>
               <i class="far fa-envelope"></i>
-              <a href="#?">Automatización</a>
+              <a href="#?">automation@logikaas.com.ar</a>
             </li>
             <li>
               <i class="fab fa-facebook-square"></i>
-              <a href="#?">Relevamiento y Planos</a>
+              <a href="https://www.facebook.com/logika.automation/">Facebook</a>
             </li>
             <li>
               <i class="fab fa-whatsapp"></i>
-              <a href="#?">Instalaciones Eléctricas</a>
+              <a href="https://wa.me/5492617124825">Whatsapp</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="copyright-footer py-2">
-        © 2020 Copyright: <span>Logika.com</span>
+        © 2020 Copyright: <span>logikaas.com.ar/</span>
       </div>
     </footer>
-    <!--<a target="_blank" href="https://iconos8.es/icons/set/home">Casa icon</a> icono por <a target="_blank" href="https://iconos8.es">Icons8</a>-->
-    <!--<a target="_blank" href="https://icons8.com/icons/set/light-on">Light On icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-    <!--<a target="_blank" href="https://icons8.com/icons/set/settings">Settings icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-    <!--<a target="_blank" href="https://iconos8.es/icons/set/phone-not-being-used">Teléfono sin utilizar icon</a> icono por <a target="_blank" href="https://iconos8.es">Icons8</a>-->
+    
 </main>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -563,3 +519,4 @@
 
 </body>
 </html>
+<!--Icons made by <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
