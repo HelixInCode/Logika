@@ -16,9 +16,6 @@ html{
   --monserat:'Montserrat', sans-serif; 
   --poppins: 'Poppins', sans-serif;
 }
-main{
-  /* background-color: #fff; */
-}
 nav{
   z-index: 100;
   position: fixed;
@@ -75,6 +72,28 @@ nav > .left-nav > .left-nav-item > a{
   right: 0;
   bottom: 0;
 }
+nav > a{
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  padding: 7px;
+  color: #fff;
+  font-size: 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > a:hover{
+  color: #fff;
+  padding: 7px 20px;
+}
+nav > .whatsapp-btn{
+  background-color: #4ced69;
+}
+
 #cover > .carousel > a{
   z-index: 3;
 }
@@ -101,6 +120,7 @@ nav > .left-nav > .left-nav-item > a{
   font-weight: bold;
   display: grid;
   grid-template-columns: minmax(300px, 768px);
+  gap: 10px;
   justify-content: center;
   justify-items: center;
   align-content: center;
@@ -108,7 +128,7 @@ nav > .left-nav > .left-nav-item > a{
 }
 #cover > .carousel > .overlay-carousel > h1{
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-size: 34px;
 }
 #cover > .carousel > .overlay-carousel > .container-buttons{
@@ -541,14 +561,16 @@ nav > .left-nav > .left-nav-item > a{
   text-align: center;
 }
 #contacto > .form-body > form > .button > button{
-  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 50px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
   border: none;
   border: 2px solid var(--colorBrand3);
-  color: white;
-  padding: 10px 50px;
   font-family: var(--roboto);
-  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0);
 }
+
 #contacto > .form-body > .form-division{
   border: none;
   height: 4px;
@@ -710,6 +732,7 @@ footer > .copyright-footer{
   }
 }
 @media screen and (min-width: 768px){
+
   #cover > .carousel > .img-container{
     top: 20px;
     left: 30px;
@@ -814,6 +837,17 @@ footer > .copyright-footer{
   nav > .left-nav > .left-nav-item span{
     font-size: 16px;
     font-weight: bold;
+  }
+  nav > a{
+    border-radius: 5px;
+    top: unset;
+    right: 20px;
+    bottom: 20px;
+    font-size: 35px;
+    padding: 10px 12.2px;
+  }
+  nav > a:hover{
+    padding: 7px 30px;
   }
 
   #cover > .carousel > .carousel-inner > .carousel-item{
