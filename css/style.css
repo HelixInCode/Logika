@@ -415,7 +415,6 @@ nav > .whatsapp-btn{
   display: grid; 
   grid-template-columns: minmax(100px, 600px);
   grid-template-rows: auto;
-  gap: 10px;
   justify-content: center;
 }
 #portafolio > .portafolio-container > .portafolio-item{
@@ -767,6 +766,7 @@ footer > .copyright-footer{
   #portafolio > .portafolio-container{
     padding: 0 10px;
     grid-template-columns: repeat(3, minmax(100px, 466.66px));
+    gap: 10px;
   }
   #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
     font-size: 12px;
