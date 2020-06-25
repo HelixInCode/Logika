@@ -52,10 +52,10 @@ const setInfoModal = (category) => {
   modalServices.innerHTML = `
   
   <div class="modal-info p-4">
-    <h3>${category.category}</h3>
-    <p>${category.description}</p>
-    <h5>Trabajos</h5>
-    <ul>
+    <h3 class="font-weight-normal mb-3">${category.category}</h3>
+    <p class="text-muted">${category.description}</p>
+    <h5 class="text-uppercase mb-2">Trabajos</h5>
+    <ul class="text-muted mb-4">
     <!-- listItems insetados mas abajo -->
     </ul>
     <span class="d-inline-block d-md-none">Toca para cerrar</span>
