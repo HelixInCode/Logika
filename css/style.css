@@ -376,7 +376,7 @@ nav > .whatsapp-btn{
 }
 #servicios > .contenedor-servicios > .servicios-item > img{
   width: 100%;
-  border-radius: 150px;
+  border-radius: 50%;
 }
 #modalServices{
   z-index: 9999;
