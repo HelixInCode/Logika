@@ -372,33 +372,86 @@ nav > .whatsapp-btn{
   grid-template-rows: repeat(2, auto);
   grid-gap: 10px;
   justify-content: center;
+  cursor: pointer;
 }
-
 #servicios > .contenedor-servicios > .servicios-item > img{
   width: 100%;
   border-radius: 150px;
 }
-
-.overlayServicios {
-
+#modalServices{
+  z-index: 9999;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(249, 249, 249, 0.23);
+  top: calc(50% - 256px);
+  left: 10px;
+  right: 10px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 512px;
+  transform: translateY(-1000px);
+  transition: .3s;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+#modalServices > .modal-info{
+  text-align: justify;
+  align-self: center;
+}
+#modalServices > .modal-info > h3,
+#modalServices > .modal-info > h5{
+  font-weight: bold;
+}
+#modalServices > .modal-info h3{
+  font-size: 22px;
+}
+#modalServices > .modal-info h5{
+  font-size: 18px;
+}
+#modalServices > .modal-info ul{
+  padding: 0;
+}
+#modalServices > .modal-info li{
+  text-align: start;
+  padding-left: 20px;
+}
+#modalServices > .modal-info li,
+#modalServices > .modal-info p{
+  font-size: 14px;
+}
+#modalServices > .modal-info li::before{
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  margin-left: -20px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--colorBrand);
+  color: var(--colorBrand);
+}
+#modalServices > .modal-info span{
   width: 100%;
-  height: 100vh;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--negroTransparente);
+  display: inline-block;
+}
+#modalServices > .modal-img{
   display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+}
+#modalServices > .modal-img > i{
+  justify-self: end;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+#modalServices > .modal-img > i:hover{
+  color: #fff;
+}
+#modalServices > .modal-img .img-container {
+  margin: auto 0;
 }
 
-.overlayServicios.activo{
-  display: flex;
-}
+
 
 
 
@@ -680,6 +733,21 @@ footer > .copyright-footer{
     color: white;
   }
 
+  #modalServices > .modal-info h3{
+    font-size: 26px;
+  }
+  #modalServices > .modal-info h5{
+    font-size: 20px;
+  }
+  #modalServices > .modal-info li,
+  #modalServices > .modal-info p{
+    font-size: 16px;
+  }
+
+  #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
+    font-size: 16px;
+  }
+
   #contacto > h1{
     font-size: 20px;
     text-align: center;
@@ -687,9 +755,6 @@ footer > .copyright-footer{
   }
   #contacto > .form-body > .redes > div > a{
     font-size: 20px;
-  }
-  #portafolio > .portafolio-container > .portafolio-item > .item-description > p{
-    font-size: 16px;
   }
   
   
@@ -720,7 +785,15 @@ footer > .copyright-footer{
   #nosotros > .nosotros-values > div:nth-of-type(3) > .values-title > h3{
     left: -25px;
   }
-
+  #modalServices{
+    top: calc(50% - 230px);
+    left: calc(50% - 192px);
+    right: unset;
+    bottom: unset;
+    grid-template-columns: minmax(300px, 384px);
+    grid-template-rows: minmax(200px, 460px);
+  }
+  
   /* #contacto > .form-body > form > .textarea-container{
     padding-left: 45px;
   } */
@@ -785,6 +858,16 @@ footer > .copyright-footer{
   }
   #servicios > .contenedor-servicios > .servicios-item:nth-of-type(5){
     grid-column: 4/6;
+  }
+  #modalServices{
+    left: calc(50% - 384px);
+    grid-template-columns: repeat(2, minmax(300px, 384px));
+  }
+  #modalServices > .modal-img{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: var(--colorBrand3);
   }
 
   #portafolio > .portafolio-container{

@@ -193,125 +193,51 @@
       <h2>Solutions</h2>
       <div class="contenedor-servicios">
 
-        <div class="servicios-item" 
-        data-imagen="automatizacion.png"
-        data-descripcion="Contamos con personal capacitado para automatizar rutinas de tu hogar, taller, empresa, local comercial o club. Se trata de programar tiempos y condiciones para cosas, procesos y más. Ajustamos tu proyecto a medida y a optima funcionalidad."
-        data-categoria="Automatización"
-        data-primero="●	Instalación de sensores de luz, humedad, movimiento y tiempo."
-        data-segundo="●	Temporizadores y microcontroladores para automatizar procesos y rutinas."
-        data-tercero="●	Automatización de piscinas, bombas, riego, portones y tableros.">
+        <div class="servicios-item" data-category="automatizacion">
           <img src="img/servicios/brazo-edit.png" class="brilloservicios" alt="">
           <h5>Automatización</h5>
         </div>
 
-        <div class="servicios-item" data-imagen="intalacion.png"
-        data-descripcion="Realizamos revelamientos, instalaciones y ampliaciones para una funcionalidad eficiente y segura de tu instalación eléctrica. También realizamos instalaciones eléctricas desde cero para que tengas un control completo de la red. Asesoramos con las mejores marcas y normas para ajustarlo a tu presupuesto."
-        data-categoria="Instalaciones Eléctricas"
-        data-primero="●	Instalaciones completas normalizadas."
-        data-segundo="●	Conexiones aéreas embutidas y subterráneas"
-        data-tercero="●	Ampliaciones, proyectos, asesoramiento.">
+        <div class="servicios-item" data-category="instalaciones">
           <img src="img/servicios/foco-edit.png" class="brilloservicios" alt="">
           <h5>Instalaciones Eléctricas</h5>
         </div>
 
-        <div class="servicios-item" 
-        data-imagen="tierra.png"
-        data-descripcion="Protegemos de manera segura riesgos eléctricos en toda tu red eléctrica y maquinaria, mediante una instalación completa y segura de Puesta a tierra. Medimos si tu instalación a Puesta a Tierra es funcional y realizamos el mantenimiento de la misma. La seguridad de riesgos eléctricos es nuestra prioridad."
-        data-categoria="Puesta a Tierra"
-        data-primero="●	Medición de continuidad y conductividad(certificada)."
-        data-segundo="●	Instalación de puesta a tierra"
-        data-tercero="●	Mantenimiento de puesta a tierra.">
+        <div class="servicios-item" data-category="tierra">
           <img src="img/servicios/tierra-edit.png" class="brilloservicios" alt="">
           <h5>Puesta a Tierra</h5>
         </div>
 
-        <div class="servicios-item"
-        data-imagen="economia.png"
-        data-descripcion="Medimos toda tu instalación eléctrica existente y te asesoramos para reducir tu consumo de energía eléctrica y optimizar tus recursos. Nuestras instalaciones te garantizan un ahorro de consumo energético eficiente."
-        data-categoria="Economía Energética"
-        data-primero="●	Inspecciones y resolución de fugas de corriente eléctrica."
-        data-segundo="●	Cálculo de potencia consumida por sectores y rediseño para optimizar la economía eléctrica."
-        data-tercero="●	Inspección de sección de conductores y dimensionamiento de térmicas, disyuntores, relés, contactores, etc."
-        >
+        <div class="servicios-item" data-category="economia">
           <img src="img/servicios/dinero-edit.png" class="brilloservicios" alt="">
           <h5>Economía Energética</h5>
         </div>
 
-        <div class="servicios-item"
-        data-imagen="plano.png"
-        data-descripcion="Realizamos planos de control, potencia y de instalaciones eléctricas existentes o proyectadas, de esta manera tendrás un control de tus instalaciones para futuras proyecciones. El plano se realizará en base a tus necesidades y diseños de ubicaciones que prefieras."
-        data-categoria="Relevamiento y Planos"
-        data-primero="●	Relevamiento de espacios a Automatizar."
-        data-segundo="●	Esquemas y Planos de circuitos eléctricos, neumáticos, mecánicos, etc."
-        data-tercero="" 
-        >
+        <div class="servicios-item" data-category="planos">
           <img src="img/servicios/plano-edit.png" class="brilloservicios" alt="">
           <h5>Relevamiento y Planos</h5>
         </div>
 
       </div>
-    </section>
-
-    <section class="overlayServicios" id="overlayServicios">
-
-      <div class="contenedor-img">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body p-0">
-              <button id="btn-cerrar-popup" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              
-              <!-- Grid row -->
-              <div class="row">
-              
-                <!-- Grid column -->
-                <div class="col-md-6 py-5 pl-5">
-                  
-                  <h5 class="font-weight-normal mb-3"></h5>
-  
-                  <p class="text-muted"></p>
-  
-                  <ul class="list-unstyled font-small mt-5">
-                    <li>
-                      <p class="text-uppercase mb-2"><strong>Trabajos</strong></p>
-                    </li>
-                    <li>
-                      <p class="text-muted mb-4 primero"></p>
-                    </li>
-                    <li>
-                      <p class="text-muted mb-4 segundo"></p>
-                    </li>
-                    <li>
-                      <p class="text-muted mb-4 tercero"></p>
-                    </li>
-               
-                  </ul>
-                  
-                </div>
-                <!-- Grid column -->
-              
-                <!-- Grid column -->
-                <div class="col-md-6">
-                  
-                  <div class="view rounded-right">
-                    <img class="img-fluid" style="height:100%;" src="" alt="Sample image">
-                  </div>
-                  
-                </div>
-                <!-- Grid column -->
-              
-              </div>
-              <!-- Grid row -->
-              
-            </div>
+      <div id="modalServices">
+        <div class="modal-info p-4">
+          <h3>Instalaciones Electricas</h3>
+          <p>Realizamos revelamientos, instalaciones y ampliaciones para una funcionalidad eficiente y segura de tu instalación eléctrica. También realizamos instalaciones eléctricas desde cero para que tengas un control completo de la red. Asesoramos con las mejores marcas y normas para ajustarlo a tu presupuesto.</p>
+          <ul></ul>
+          <h5>Trabajos</h5>
+          <ul>
+            <li>Instalaciones completas normalizadas.</li>
+            <li>Conexiones aéreas embutidas y subterráneas.</li>
+            <li>Ampliaciones, proyectos, asesoramiento.</li>
+          </ul>
+        </div>
+        <div class="modal-img p-4">
+          <i class="fas fa-times"></i>
+          <div class="img-container">
+            <img class="img-fluid" src="img/servicios/foco-edit.png" alt="">
           </div>
         </div>
-        
       </div>
-      
-
-
     </section>
     
     <section id="portafolio" class="py-5">
@@ -512,7 +438,7 @@
   <script type="text/javascript" src="particles/js/app.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
    <!--Typed-->
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
    <script type="text/javascript" src="js/typed.js"></script>
