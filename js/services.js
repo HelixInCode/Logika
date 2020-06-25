@@ -1,5 +1,5 @@
 const automatizacion = {
-  img: 'brazo-edit.png',
+  img: 'automatizacion.png',
   description: 'Contamos con personal capacitado para automatizar rutinas de tu hogar, taller, empresa, local comercial o club. Se trata de programar tiempos y condiciones para cosas, procesos y más. Ajustamos tu proyecto a medida y a optima funcionalidad.',
   category: 'Automatización',
   works: [
@@ -54,13 +54,13 @@ const setInfoModal = (category) => {
   <div class="modal-info p-4">
     <h3 class="font-weight-normal mb-3">${category.category}</h3>
     <p class="text-muted">${category.description}</p>
-    <h5 class="text-uppercase mb-2">Trabajos</h5>
+    <p class="text-uppercase mb-2"><strong>Trabajos</strong></p>
     <ul class="text-muted mb-4">
     <!-- listItems insetados mas abajo -->
     </ul>
     <span class="d-inline-block d-md-none">Toca para cerrar</span>
   </div>
-  <div class="modal-img p-4">
+  <div class="modal-img view">
     <i class="fas fa-times"></i>
     <div class="img-container">
       <img class="img-fluid" src="img/servicios/${category.img}" alt="${category.category} imagen">

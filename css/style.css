@@ -437,12 +437,17 @@ nav > .whatsapp-btn{
 }
 #modalServices > .modal-img{
   display: none;
+  background-color: linear-gradient(bottom, #004aad, 40%, #00c4cc, 60%);
+
 }
 #modalServices > .modal-img > i{
   justify-self: end;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
+  margin-top: 2%;
+  margin-right: 3%;
+  color: #414242;
 }
 #modalServices > .modal-img > i:hover{
   color: #fff;
@@ -867,7 +872,7 @@ footer > .copyright-footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    background-color: var(--colorBrand3);
+    background-image:linear-gradient(bottom, #004aad, 40%, #00c4cc, 60%);
   }
 
   #portafolio > .portafolio-container{
