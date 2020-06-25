@@ -9,7 +9,7 @@ const automatizacion = {
   ],
 }
 const instalaciones = {
-  img: 'foco-edit.png',
+  img: 'instalaciones.png',
   description: 'Realizamos revelamientos, instalaciones y ampliaciones para una funcionalidad eficiente y segura de tu instalación eléctrica. También realizamos instalaciones eléctricas desde cero para que tengas un control completo de la red. Asesoramos con las mejores marcas y normas para ajustarlo a tu presupuesto.',
   category: 'Instalaciones Eléctricas',
   works: [
@@ -19,7 +19,7 @@ const instalaciones = {
   ],
 }
 const tierra = {
-  img: 'tierra-edit.png',
+  img: 'tierra.png',
   description: 'Protegemos de manera segura riesgos eléctricos en toda tu red eléctrica y maquinaria, mediante una instalación completa y segura de Puesta a tierra. Medimos si tu instalación a Puesta a Tierra es funcional y realizamos el mantenimiento de la misma. La seguridad de riesgos eléctricos es nuestra prioridad.',
   category: 'Puesta a Tierra',
   works: [
@@ -29,7 +29,7 @@ const tierra = {
   ],
 }
 const economia = {
-  img: 'dinero-edit.png',
+  img: 'economia.png',
   description: 'Medimos toda tu instalación eléctrica existente y te asesoramos para reducir tu consumo de energía eléctrica y optimizar tus recursos. Nuestras instalaciones te garantizan un ahorro de consumo energético eficiente.',
   category: 'Economía Energética',
   works: [
@@ -39,7 +39,7 @@ const economia = {
   ],
 }
 const planos = {
-  img: 'plano-edit.png',
+  img: 'plano.png',
   description: 'Realizamos planos de control, potencia y de instalaciones eléctricas existentes o proyectadas, de esta manera tendrás un control de tus instalaciones para futuras proyecciones. El plano se realizará en base a tus necesidades y diseños de ubicaciones que prefieras.',
   category: 'Relevamiento y Planos',
   works: [
@@ -47,6 +47,7 @@ const planos = {
     'Esquemas y Planos de circuitos eléctricos, neumáticos, mecánicos, etc.',
   ],
 }
+
 const setInfoModal = (category) => {
   
   modalServices.innerHTML = `
@@ -60,10 +61,10 @@ const setInfoModal = (category) => {
     </ul>
     <span class="d-inline-block d-md-none">Toca para cerrar</span>
   </div>
-  <div class="modal-img view">
+  <div class="modal-img">
     <i class="fas fa-times"></i>
-    <div class="img-container">
-      <img class="img-fluid" src="img/servicios/${category.img}" alt="${category.category} imagen">
+    <div class="img-container px-5">
+      <img class="img-fluid" src="img/png/${category.img}" alt="${category.category} imagen">
     </div>
   </div>
 

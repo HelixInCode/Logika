@@ -1,6 +1,7 @@
 *{
   list-style: none;
 }
+brillo
 html{
   scroll-behavior: smooth;
 }
@@ -249,10 +250,9 @@ nav > .whatsapp-btn{
 .brilloservicios:hover {
  
   background: #2195f300;
-  box-shadow:0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
-  
-
+  box-shadow:0 0 10px #2196f3,0 0 40px #2196f3,0 0 40px #2196f3;
 }
+
 #nosotros{
   display: grid;
   grid-template-columns: 1fr;
@@ -437,8 +437,7 @@ nav > .whatsapp-btn{
 }
 #modalServices > .modal-img{
   display: none;
-  background-color: linear-gradient(bottom, #004aad, 40%, #00c4cc, 60%);
-
+  background: linear-gradient(0deg, #004aad 0%, #00c4cc 100%);
 }
 #modalServices > .modal-img > i{
   justify-self: end;
@@ -702,6 +701,7 @@ footer > .footer-main ul{
 footer > .footer-main ul > li{
   padding: 5px 0;
   font-weight: 400;
+  font-size: 14px;
 }
 footer > .footer-main ul > li > a{
   color: #fff;
@@ -725,6 +725,7 @@ footer > .footer-main > .footer-services > ul{
 }
 footer > .copyright-footer{
   background-color: var(--negroTransparente);
+  font-weight: bold;
   text-align: center;
 }
 
@@ -872,7 +873,6 @@ footer > .copyright-footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    background-image:linear-gradient(bottom, #004aad, 40%, #00c4cc, 60%);
   }
 
   #portafolio > .portafolio-container{
@@ -993,6 +993,9 @@ footer > .copyright-footer{
   nav > .left-nav > .left-nav-item:nth-last-of-type(3) i{
     border: 1px solid #fff;
   }
+  footer > .footer-main ul > li{
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1500px){
 
@@ -1052,7 +1055,7 @@ footer > .copyright-footer{
     font-size: 23px;
   }
   #portafolio > .portafolio-container > .portafolio-item > .item-description > div > span {
-    font-size: 20px;
+    font-size: 21px;
   }
   #portafolio > .portafolio-container > .portafolio-item > .item-description > div > .btn {
     font-size: 23px;
@@ -1065,19 +1068,14 @@ footer > .copyright-footer{
   #contacto > .form-body > .redes > div > a {
     font-size: 25px;
   }
-  footer > .footer-main {
-    margin-bottom: 40px;
+  footer > .footer-main{
+    grid-template-columns: minmax(200px, 367px) minmax(364px, 500px) minmax(200px, 500px);
   }
+  
   footer > .footer-main > .img-container > img{
     padding-right: 50px;
     width: 350px;
     height: auto;
-  }
-  footer > .footer-main ul{
-    grid-gap: 20px;
-  }
-  footer > .footer-main ul > li {
-    align-self: center;
   }
   footer > .footer-main ul > li > a {
     font-size: 20px;
@@ -1099,4 +1097,12 @@ footer > .copyright-footer{
   margin-right: auto;
   grid-column: 1/3;
   display: none;
+}
+
+button.close {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  padding-right: 1rem;
+  padding-top: .6rem;
 }
