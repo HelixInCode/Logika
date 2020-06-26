@@ -1,0 +1,7 @@
+Options All -Indexes
+
+ErrorDocument 404 /www.logikaas.com.ar/page404.html
+
+RewriteEngine on
+
+RewriteRule  ^([a-zA-Z0-9/]+)$ $1.html

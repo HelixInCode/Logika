@@ -63,81 +63,81 @@ for (let i = 0; i < portafolio.length; i++) {
 //---------------------FORMULARIO SCRIPT-------------------//
 
 //-------------VARIABLES
-const nombre = document.querySelector('#nombre');
-const email = document.querySelector('#email');
-const telefono = document.querySelector('#telefono');
-const asunto = document.querySelector('#asunto');
-const mensajes = document.querySelector('#mensaje-form');
-const btnEnviar = document.querySelector('#btn-enviar');
-const img = document.querySelector('#img-check');
+//const nombre = document.querySelector('#nombre');
+//const email = document.querySelector('#email');
+//const telefono = document.querySelector('#telefono');
+//const asunto = document.querySelector('#asunto');
+//const mensajes = document.querySelector('#mensaje-form');
+//const btnEnviar = document.querySelector('#btn-enviar');
+//const img = document.querySelector('#img-check');
 
 //--------------EVENTLISTENERS
-eventListeners();
+//eventListeners();
 
-function eventListeners() {
+//function eventListeners() {
     //inicia la app y desabilita el boton enviar
-    document.addEventListener('DOMContentLoaded', iniciaApp);
+  //  document.addEventListener('DOMContentLoaded', iniciaApp);
 
     //validar campos
-    nombre.addEventListener('blur', validarCampo);
-    telefono.addEventListener('blur', validarCampo);
-    email.addEventListener('blur', validarCampo);
-    asunto.addEventListener('blur', validarCampo);
-    mensajes.addEventListener('blur', validarCampo);
+    //nombre.addEventListener('blur', validarCampo);
+    //telefono.addEventListener('blur', validarCampo);
+    //email.addEventListener('blur', validarCampo);
+    //asunto.addEventListener('blur', validarCampo);
+    //mensajes.addEventListener('blur', validarCampo);
 
     //habilitar boton enviar
-    btnEnviar.addEventListener('click', enviarEmail);
-  }
+   // btnEnviar.addEventListener('click', enviarEmail);
+ // }
 //-------------FUNCTION
-function iniciaApp(){
-  btnEnviar.disabled = true;
-}
+//function iniciaApp(){
+ // btnEnviar.disabled = true;
+//}
 
-function validarCampo(){
-  validarLongitud(this);
+//function validarCampo(){
+  //validarLongitud(this);
 
-  let correcto;
+  //let correcto;
 
   //validar solo email
-  if(this.type === 'email'){
-      validarEmail(this);
-  }
+ // if(this.type === 'email'){
+   //   validarEmail(this);
+ // }
 
-  if (email.value.length > 3 && nombre.value.length > 3 && mensajes.value.length > 3){
-      btnEnviar.disabled = false;
-      //console.log('mensaje enviado')
-  }
-}
+  //if (email.value.length > 3 && nombre.value.length > 3 && mensajes.value.length > 3){
+    //  btnEnviar.disabled = false;
+    //  console.log('mensaje enviado')
+  //}
+//}
 
-function enviarEmail(e){
-  e.preventDefault();
+//function enviarEmail(e){
+  //e.preventDefault();
   
   //console.log('email enviado');
-  setTimeout(function () {
-      img.style.display = 'block';
-      img.classList.add('bounceIn');
-  }, 2000);
+  //setTimeout(function () {
+    //  img.style.display = 'block';
+      //img.classList.add('bounceIn');
+ //}, 2000);
 
   
 
-}
+//}
 
 
-function validarLongitud(campo){
-  if(campo.value.length > 3){
-      campo.style.borderBottom = '1px solid green';
-  }else{
-      campo.style.borderBottom = '1px solid red';
-  }
-}
+//function validarLongitud(campo){
+ // if(campo.value.length > 3){
+   //   campo.style.borderBottom = '1px solid green';
+  //}else{
+    //  campo.style.borderBottom = '1px solid red';
+ // }
+//}
 
-function validarEmail(email){
-  let position = email.value.indexOf('@');
+//function validarEmail(email){
+  //let position = email.value.indexOf('@');
 
-  if(position !== -1){
-      email.style.borderBottom = '1px solid green';
-      correcto = true;
-  }else{
-      email.style.borderBottom = '1px solid red';
-  }
-}
+ // if(position !== -1){
+   //   email.style.borderBottom = '1px solid green';
+     // correcto = true;
+ // }else{
+   //   email.style.borderBottom = '1px solid red';
+ // }
+//}
